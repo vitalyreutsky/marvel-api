@@ -1,0 +1,18 @@
+{
+  "name": "marvel-api",
+  "version": "1.0.0",
+  "homepage": "vitalyreutsky.github.io/marvel-api",
+  "scripts": {
+    "start": "parcel public/index.html --open",
+    "build": "parcel public/index.html",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Vitaly Reutsky",
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
