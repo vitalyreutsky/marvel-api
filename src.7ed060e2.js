@@ -5532,28 +5532,12 @@ var App = /*#__PURE__*/function () {
 var _default = new App();
 
 exports.default = _default;
-},{"../../constans/api":"../src/constans/api.js","../../utils/getDataApi":"../src/utils/getDataApi.js","./App.css":"../src/components/App/App.css"}],"../src/components/App/index.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-Object.defineProperty(exports, "default", {
-  enumerable: true,
-  get: function () {
-    return _App.default;
-  }
-});
-
-var _App = _interopRequireDefault(require("./App"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./App":"../src/components/App/App.js"}],"../src/index.js":[function(require,module,exports) {
+},{"../../constans/api":"../src/constans/api.js","../../utils/getDataApi":"../src/utils/getDataApi.js","./App.css":"../src/components/App/App.css"}],"../src/index.js":[function(require,module,exports) {
 "use strict";
 
 require("regenerator-runtime/runtime");
 
-var _App = _interopRequireDefault(require("./components/App"));
+var _App = _interopRequireDefault(require("./components/App/App"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -5576,7 +5560,7 @@ _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
     }
   }, _callee);
 }))();
-},{"regenerator-runtime/runtime":"../node_modules/regenerator-runtime/runtime.js","./components/App":"../src/components/App/index.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"regenerator-runtime/runtime":"../node_modules/regenerator-runtime/runtime.js","./components/App/App":"../src/components/App/App.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -5604,7 +5588,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62506" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55641" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
