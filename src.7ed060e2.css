@@ -1,6 +1,60 @@
+._comics__container_f3eaa {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+._comics__item_f3eaa {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid var(--color-yellow-green);
+  width: 250px;
+  background-color: var(--color-light);
+  margin: var(--spacing-large);
+  transition: 0.5s;
+  cursor: pointer;
+}
+._comics__item_f3eaa:hover {
+  transform: rotate(-4deg) scale(0.95);
+  filter: saturate(150%);
+}
+
+._comics__name_f3eaa {
+  display: flex;
+  margin: auto;
+  padding: var(--spacing-small) var(--spacing-medium);
+}
+
+._comics__img_f3eaa {
+  width: 100%;
+}
+
+.img-contain {
+  display: block;
+  object-fit: contain;
+  object-position: center;
+}
+
+.img-cover {
+  display: block;
+  object-fit: contain;
+  object-position: center;
+}
+
 :root {
   --color-blue: #3199dc;
   --color-dark: #222222;
+  --color-white: #fff;
+  --color-yellow-green: yellowgreen;
+  --color-light: #f8f9fa;
+
+  --spacing-small: 10px;
+  --spacing-medium: 15px;
+  --spacing-large: 20px;
 }
 
 *,
@@ -36,6 +90,23 @@ body {
 
 ::-webkit-scrollbar-track {
   background-color: var(--color-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
 }
 
 
