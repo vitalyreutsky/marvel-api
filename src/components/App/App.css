@@ -54,3 +54,10 @@ h6 {
   margin: 0;
   padding: 0;
 }
+
+:global(.btn) {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}

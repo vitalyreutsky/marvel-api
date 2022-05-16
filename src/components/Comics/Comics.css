@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /*border: 2px solid var(--color-yellow-green);*/
+  border: 2px solid var(--color-yellow-green);
   width: 250px;
   background-color: var(--color-light);
   margin: var(--spacing-large);
@@ -31,4 +31,16 @@
 
 .comics__img {
   width: 100%;
+}
+
+:global(.img-contain) {
+  display: block;
+  object-fit: contain;
+  object-position: center;
+}
+
+:global(.img-cover) {
+  display: block;
+  object-fit: contain;
+  object-position: center;
 }

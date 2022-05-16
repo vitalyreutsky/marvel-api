@@ -3,7 +3,7 @@ import { ROOT_INDEX } from "../../constans/root";
 import { getDataApi } from "../../utils/getDataApi";
 import { IMG_STANDARD_XLARGE, IMG_NOT_AVAILABLE } from "../../constans/api";
 
-import "./Comics.css";
+import classes from "./Comics.css";
 
 class Comics {
   async render() {
@@ -17,16 +17,16 @@ class Comics {
         const uri = API_URL + URL_COMICS + "/" + id + "/" + URL_CHARACTERS;
 
         htmlContent += `
-         <li class="comics__item" data-uri="${uri}">
-            <span class="comics__name">${title}</span>
-            <img class="comics__img" src="${imgSrc}"/>
+         <li class="comics__item ${classes.comics__item}" data-uri="${uri}">
+            <span class="${classes.comics__name}">${title}</span>
+            <img class=".img-contain ${classes.comics__img}" src="${imgSrc}"/>
          </li>
       `;
       }
     });
 
     const htmlWrapper = `
-      <ul class="comics__container">${htmlContent}</ul>
+      <ul class="${classes.comics__container}">${htmlContent}</ul>
     `;
 
     ROOT_INDEX.innerHTML = htmlWrapper;

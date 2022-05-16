@@ -10,7 +10,8 @@
   "author": "Vitaly Reutsky",
   "devDependencies": {
     "gh-pages": "^4.0.0",
-    "parcel-bundler": "^1.12.5"
+    "parcel-bundler": "^1.12.5",
+    "postcss-modules": "^3.2.2"
   },
   "dependencies": {
     "axios": "^0.27.2",
