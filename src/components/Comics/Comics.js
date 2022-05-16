@@ -3,6 +3,7 @@ import { ROOT_INDEX } from "../../constans/root";
 import { getDataApi } from "../../utils/getDataApi";
 import { IMG_STANDARD_XLARGE, IMG_NOT_AVAILABLE } from "../../constans/api";
 import Error from "../Error/Error";
+import Characters from "../Characters/Characters";
 
 import classes from "./Comics.css";
 
@@ -42,7 +43,7 @@ class Comics {
       const uri = element.getAttribute("data-uri");
 
       element.addEventListener("click", () => {
-        console.log(uri);
+        Characters.render(uri);
       });
     });
   }

@@ -4,10 +4,13 @@
   --color-white: #fff;
   --color-yellow-green: yellowgreen;
   --color-light: #f8f9fa;
+  --color-red: red;
 
   --spacing-small: 10px;
   --spacing-medium: 15px;
   --spacing-large: 20px;
+
+  --box-shadow: 0 2px 24px rgba(168, 175, 196, 0.5);
 }
 
 *,
