@@ -1,7 +1,7 @@
 {
   "name": "marvel-api",
   "version": "1.0.0",
-  "homepage": "vitalyreutsky.github.io/marvel-api",
+  "homepage": "https://vitalyreutsky.github.io/marvel-api",
   "scripts": {
     "start": "parcel public/index.html --open",
     "build": "parcel public/index.html",
@@ -13,6 +13,7 @@
     "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
-    "axios": "^0.27.2"
+    "axios": "^0.27.2",
+    "components": "^0.1.0"
   }
 }
