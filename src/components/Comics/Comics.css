@@ -44,3 +44,9 @@
   object-fit: contain;
   object-position: center;
 }
+
+@media (max-width: 500px) {
+  .comics__item {
+    width: 100%;
+  }
+}

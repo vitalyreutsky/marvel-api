@@ -93,3 +93,18 @@
 .notification__title {
   text-align: center;
 }
+
+@media (max-width: 500px) {
+  .notification__content {
+    width: 90%;
+  }
+
+  .characters__container {
+    justify-content: center;
+  }
+
+  .characters__close {
+    top: 0;
+    right: 0;
+  }
+}
